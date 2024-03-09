@@ -34,7 +34,7 @@ def main():
     if st.sidebar.button("Login"):
         if authenticate(username, password):
             st.success("Logged in as {}".format(username))
-            # Once authenticated, show the rest of the app
+            # Once authenticated, show the rest of the app            
             show_app()
         else:
             st.error("Invalid username or password")
@@ -48,7 +48,7 @@ def show_app():
     )
     st.subheader("Key Features:")
     st.markdown(
-        """
+        """""
         * **Data_page:** _Contains all the datasets that was used in analyzing and training machine learning models._
         * **Dashboard:** _This page contains all the visuals that were created during our analysis._
         * **Predict_page:** _This page allows you to predict the likelyhood of a customer churning._
