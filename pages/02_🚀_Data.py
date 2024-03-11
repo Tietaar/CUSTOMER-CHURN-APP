@@ -20,10 +20,6 @@ username = environment_variables.get("USERNAME")
 password = environment_variables.get("PASSWORD")
 
 
-connection_string = f"DRIVER={{SQL Server}};SERVER={server};DATABASE={database};UID={username};PWD={password};MARS_Connection=y"
-
-connection = pyodbc.connect(connection_string) 
-
 
 st.set_page_config(
     page_title= 'View Data',
