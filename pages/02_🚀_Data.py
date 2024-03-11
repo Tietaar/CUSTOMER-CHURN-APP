@@ -3,24 +3,6 @@ import pandas as pd
 import numpy as np
 
 
-import pyodbc    
-from dotenv import dotenv_values
-import warnings 
-
-warnings.filterwarnings('ignore')
-
-#load environment viarables from .env
-environment_variables= dotenv_values('.env')
-
-
-# Get the values for the credentials you set in the '.env' file
-server = environment_variables.get("SERVER")
-database = environment_variables.get("DATABASE")
-username = environment_variables.get("USERNAME")
-password = environment_variables.get("PASSWORD")
-
-
-
 st.set_page_config(
     page_title= 'View Data',
     page_icon= '',
